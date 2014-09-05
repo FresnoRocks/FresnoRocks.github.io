@@ -1,0 +1,85 @@
+/* Reset Styles */
+body, div, h1, h2, h3, p, ol{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    background-color: yellow;
+    
+}
+header{
+    background-color: blue;
+    max-width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 45px;
+    text-align: center;
+    color:white;
+}
+
+article{
+    background-color: pink;
+    float: left;
+    padding: 5%;
+    color:white;
+    text-align: center;
+    position: relative;
+    width:40%;
+    height: 100px;
+    
+}
+
+aside{
+    float:right;
+    background-color: red;
+    padding: 5%;
+    color:white;
+    text-align: center;
+    position: relative;
+    width:40%;
+    height: 100px;
+}
+
+.FirstBox, .SecondBox, .ThirdBox, .FourthBox{
+    float: left;
+    background: green;
+    padding:5%;
+    color:white;
+    text-align: center;
+    width: 15%;
+    height: 50px;
+    border: 2px soild white;
+    
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom:0;
+
+}
+
+@media (max-width: 1200px){
+    article{
+        float: right;
+    }
+    
+    aside{
+        float:left;
+    }
+    
+    div .FirstBox, .SecondBox, .ThirdBox, .Fourthbox{
+        width: 50%
+    }
+}
+
+
+
+
+
+

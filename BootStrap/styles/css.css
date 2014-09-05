@@ -1,0 +1,44 @@
+.jumbocustom{
+    background-image: url(http://thenypost.files.wordpress.com/2013/09/119152.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 -23px;
+    background-attachment: fixed;
+    background-color: black;
+    color: white;
+
+}
+
+.jumbotron h1{
+    font-size: 100px;
+    
+
+}
+
+.jumbotron p{
+    font-size:19px;
+}
+
+.infocontainer{
+    color: white;
+    background-image: url("http://www.freebiesgallery.com/wp-content/uploads/2012/08/dark-website-backgrounds-10.jpg");
+    height: 300px;
+    background-size:100%;
+    
+    
+}
+
+.infocontainer h3{
+   color:#096464;
+    font-family: 'Oswald', sans-serif;
+}
+
+footer{
+    background-color: #000;
+    color:white;
+    text-align: center;
+    height: 40px;
+    
+}
+
+

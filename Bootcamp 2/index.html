@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>USPS</title>
+	<link href='http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<header>
+		<img width="200px" src="img/logo.png">
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>About Us</li>
+				<li>Products</li>
+				<li>Contact Us</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div id="hero">
+		    <div id="sizer">
+		        <button class="plus">+</button>
+		        <button class="minus">-</button>
+		        
+		    </div>
+		    
+		</div>
+		<section class="clear">
+			<img src="img/avatar.png">
+			<article>
+				<h1>Greetings,</h1>
+				<p>	
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+				<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+				<h2>James Kinler</h2>
+			</article>
+		</section>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2014 Geekwise Academy. All Rights Reserved</p>
+	</footer>
+       <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+           
+        <script>
+            $(document).ready(function(){
+            
+                var size=100;
+               
+                $("#sizer button").on({
+                    click: function(){
+                        console.log($(this));
+                        if($(this).hasClass("plus")){
+                        console.log("clicked the plus");
+                            size = size + 10;
+                        $("body").css ("font-size" , size +  "%");
+                        }else{
+                                console.log("clicked the minus");
+                                    size = size - 10;
+                                $("body").css ("font-size" , size - "%");
+                        }
+                    }
+                })
+                
+            });
+        </script>
+</body>
+</html>

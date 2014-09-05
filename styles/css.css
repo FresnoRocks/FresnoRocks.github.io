@@ -1,0 +1,73 @@
+body{
+	margin:	0;
+	padding: 0;
+    background-image: url("http://www.yucapro.com/images/background13.jpg")
+}
+
+.navbar-default{
+    background: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    background-image: url("../images/KStudiosLogo.png");
+    background-repeat: no-repeat;
+    background-size: 3%;
+    height: 45px;
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+} 
+
+.navbar .nav  li  a{
+    color: white;
+
+}
+
+section{
+margin-top: 65px;
+
+}
+
+
+section h1{
+    font-family: 'Playball', cursive;
+    color:white;
+    font-size: 55px;
+    text-align: center;
+    
+}
+
+section h1:before{
+	content: " - ";
+}
+
+section h1:after{
+	content: " - ";
+}
+
+section p{
+   font-family: 'Roboto Slab', serif;
+    color:white;
+    text-align: center;
+    margin: 65px;
+    font-size: 16px;
+}
+
+footer{
+    background-color: #b9b4b4;
+    height: 85px;
+    width:100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+    
+
+
+
+
