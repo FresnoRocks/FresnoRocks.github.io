@@ -3,7 +3,8 @@ body{
 	padding: 0;
     background-image: url("http://www.yucapro.com/images/background13.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .navbar-default{
