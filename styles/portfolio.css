@@ -1,0 +1,88 @@
+body{
+	margin:	0;
+	padding: 0;
+    background-image: url("../images/websitebackground.jpg");
+    background-repeat: no-repeat;
+}
+
+.navbar-default{
+    background: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    background-image: url("../images/KStudiosLogo.png");
+    background-repeat: no-repeat;
+    background-size: 3%;
+    height: 45px;
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+} 
+
+.navbar .nav  li  a{
+    color: white;
+
+}
+
+section{
+margin-top: 150px;
+
+}
+
+
+section h1{
+    font-family: 'Playball', cursive;
+    color:white;
+    font-size: 55px;
+    text-align: center;
+    
+}
+
+section h1:before{
+	content: " - ";
+}
+
+section h1:after{
+	content: " - ";
+}
+
+section p{
+   font-family: 'Roboto Slab', serif;
+    color:white;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 45px;
+}
+
+section img{
+    width:26%;
+    margin-left: 115px;
+}
+
+.thumbnail{
+    margin: 15px 15px 0 15px;
+}
+
+
+
+footer{
+    background-color: #000;
+    height: 45px;
+    display: block;
+    width:100%;
+    position: absolute;
+    bottom: 0;
+    color: #816e6e;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+
+
+    
+
+
+
+
