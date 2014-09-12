@@ -43,12 +43,13 @@ section h1{
 }
 
 
-footer{
+#footer{
     background-color: #000;
-    height: 45px;
     display: block;
+    height: 45px;
     width:100%;
-    position: absolute;
+    position: fixed;
+    left: 0;
     bottom: 0;
     color: #816e6e;
     text-align: center;
