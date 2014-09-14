@@ -27,6 +27,8 @@ body{
 
 .thumbnail{
     margin: 15px 5px 0 5px;
+    background-color: #434343;
+    border: #959393;
 }
 
 .row {
@@ -34,6 +36,7 @@ margin-right: 0;
 margin-left: 0;
     
 }
+
 section h1{
     font-family: 'Playball', cursive;
     color:white;
