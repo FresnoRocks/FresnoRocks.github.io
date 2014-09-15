@@ -79,7 +79,6 @@ footer{
     text-align: center;
     font-size: 15px;
     font-family: 'Roboto Slab', serif;
-    clear: both;
 }
 
 @media (max-width: 768px) {
