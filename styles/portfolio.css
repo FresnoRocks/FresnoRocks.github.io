@@ -45,8 +45,12 @@ section h1{
 
 }
 
+.navbar-collapse{
+    background-color: black;
+}
 
-#footer{
+
+footer{
     background-color: #000;
     display: block;
     height: 45px;

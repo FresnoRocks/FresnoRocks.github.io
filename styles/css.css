@@ -60,6 +60,13 @@ section img{
     
 }
 
+.nav .navbar-nav .navbar-right{
+    background-color: blue;
+}
+
+.navbar-collapse{
+    background-color: black;
+}
 
 
 .clear{
