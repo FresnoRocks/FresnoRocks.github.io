@@ -100,7 +100,27 @@ footer{
         left: 0;
     }
 }
+
+@media screen and (max-width : 767px){
+    .navbar-collapse{
+        background-color: black;
+    }
+
 }
+
+@media screen and (max-width : 568px){
+
+
+    html{
+        height: 100%;
+    }
+    
+    footer{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        
+    }
 
 
 
