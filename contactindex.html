@@ -37,7 +37,7 @@
       <ul class="nav navbar-nav navbar-right">
            <li><a href="index.html">Home</a></li>
             <li><a href="portfolio_index.html">Portfolio</a></li>
-             <li><a href="contactindex.html">Contact Me</a></li>
+             <li><a href="#">Contact Me</a></li>
             
           </ul>
     </div><!-- /.navbar-collapse -->
@@ -46,18 +46,19 @@
 
 <section>
     <div class="formspacing">
-    <form role="form" method="post" action="contact.php">
+    <form action="contact.php" method="post">
+    <form role="form">
   <div class="form-group">
-    <label for="exampleInputName1">Your Name</label>
-    <input type="Name" class="form-control" id="exampleInputName1" placeholder="Enter Your Name">
+    <label for="exampleInputName1">name</label>
+    <input type="text" class="form-control" id="inputName" placeholder="Enter Your Name">
   </div>
   <div class="form-group">
-    <label for="exampleInputEmail1">Email Address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Email">
+    <label for="exampleInputEmail1">email</label>
+    <input type="text" class="form-control" id="inputEmail" placeholder="Enter Your Email">
   </div>
        <div class="form-group">
-            <label class="control-label" for="textarea">Message</label>  
-           <textarea type="message" class="form-control" rows="3" id="exampleInputMessage" placeholder="Enter A Message"></textarea> 
+            <label class="control-label" for="textarea">message</label>  
+           <textarea name="comments" class="form-control" rows="3" id="inputComments" placeholder="Enter A Comment"></textarea> 
            
         </div> 
 
