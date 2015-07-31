@@ -1,0 +1,26 @@
+.img-circle{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.name{
+    text-align: center;
+}
+
+
+
+.modalbutton{
+    margin: 10px;
+}
+
+
+
+
+
+.projectName{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Sigmar One', cursive;
+}
+

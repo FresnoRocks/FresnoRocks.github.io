@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link href="http://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="cs/styles.css"/>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <title>Document</title>
+</head>
+
+
+
+<body ng-app="myApp">
+<div class="header">
+</div>
+
+<div class="main" ng-controller="MainController">
+    <div class="container">
+        <h1>{{ title }}</h1>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="modalbutton btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Add Project
+        </button>
+
+        <!-- Modal -->
+        <div id="myModal1" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <form role="form">
+                            <div class="row">
+                                <div class="form-group col-xs-6">
+                                    Project Name: <input type="text" class="form-control" ng-model="projectName"/>
+                                    Project Description: <textarea class="form-control" rows="5" id="comment" ng-model="projectDescription"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="row">
+                                <div class="form-group col-xs-4">
+                                    Team Member: <input type="text" class="form-control" ng-model="name"/>
+                                    Team Member Photo: <input type="url" class="form-control" ng-model="photo"/> </br>
+                                    Team Member: <input type="text" class="form-control" ng-model="name2"/>
+                                    Team Member Photo: <input type="url" class="form-control" ng-model="photo2"/> </br>
+                                    Team Member: <input type="text" class="form-control" ng-model="name3"/>
+                                    Team Member Photo: <input type="url" class="form-control" ng-model="photo3"/> </br>
+                                    Team Member: <input type="text" class="form-control" ng-model="name4"/>
+                                    Team Member Photo: <input type="url" class="form-control" ng-model="photo4"/> </br>
+                                    <button class="saveTeam btn btn-primary" ng-click="saveTeamMember(projectName, projectDescription, name, photo, name2, photo2, name3, photo3, name4, photo4)">Save Project</button>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container">
+        <div ng-repeat="item in projects" class="col-md-6">
+            <div class="thumbnail">
+                <p class="projectName"> {{item.projectName}}</p>
+                <p class="projectDescription"> {{item.projectDescription}}</p>
+                <div class="item row">
+                    <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                            <p class="name"> {{item.name}}</p>
+                            <img  class="img-circle" ng-src="{{item.photo || 'http://forums.trovegame.com/image.php?u=19087000&dateline=1437421107'}}">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                            <p class="name"> {{item.name2}}</p>
+                            <img  class="img-circle" ng-src="{{item.photo2 || 'http://forums.trovegame.com/image.php?u=19087000&dateline=1437421107'}}">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                            <p class="name"> {{item.name3}}</p>
+                            <img  class="img-circle" ng-src="{{item.photo3 || 'http://forums.trovegame.com/image.php?u=19087000&dateline=1437421107'}}">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                            <p class="name"> {{item.name4}}</p>
+                            <img  class="img-circle" ng-src="{{item.photo4 || 'http://forums.trovegame.com/image.php?u=19087000&dateline=1437421107'}}">
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <button class="btn btn-danger btn-sm" ng-click="deleteProject($index)">Delete Project</button>
+
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal2">Update Project
+                </button>
+
+                <!-- Modal -->
+                <div id="myModal2" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <form role="form">
+                                    <div class="row">
+                                        <div class="form-group col-xs-6">
+                                            Project Name: <input type="text" class="form-control" ng-model="e.projectName"/>
+                                            Project Description: <textarea class="form-control" rows="5" id="comment" ng-model="e.projectDescription"></textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="modal-body">
+                                <form role="form">
+                                    <div class="row">
+                                        <div class="form-group col-xs-4">
+                                            Team Member: <input type="text" class="form-control" ng-model="e.name"/>
+                                            Team Member Photo: <input type="url" class="form-control" ng-model="e.photo"/> </br>
+                                            Team Member: <input type="text" class="form-control" ng-model="e.name2"/>
+                                            Team Member Photo: <input type="url" class="form-control" ng-model="e.photo2"/> </br>
+                                            Team Member: <input type="text" class="form-control" ng-model="e.name3"/>
+                                            Team Member Photo: <input type="url" class="form-control" ng-model="e.photo3"/> </br>
+                                            Team Member: <input type="text" class="form-control" ng-model="e.name4"/>
+                                            Team Member Photo: <input type="url" class="form-control" ng-model="e.photo4"/> </br> </br>
+
+                                            <button class="btn btn-primary" ng-click="updatesTeam($index, e.projectName, e.projectDescription, e.name, e.photo, e.name2, e.photo2, e.name3, e.photo3, e.name4, e.photo4)">Save Updates</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="java/app.js"></script>
+<script src="java/controller.js"></script>
+</body>
+</html>
